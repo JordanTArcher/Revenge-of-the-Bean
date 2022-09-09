@@ -1,0 +1,14 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class LoadFinish : MonoBehaviour
+{
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("FinishLevel");
+        }
+    }
+}
